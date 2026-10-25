@@ -1,0 +1,13 @@
+{
+  "entry": "main.ts",
+  "env": { "GREETING": "hello from env" },
+  "requests": [
+    { "name": "GET /hello", "path": "/hello" },
+    { "name": "GET /whoami", "path": "/whoami", "headers": { "x-forwarded-for": "203.0.113.7" } },
+    { "name": "GET /validate good", "path": "/validate?email=ada@example.com" },
+    { "name": "GET /validate bad", "path": "/validate?email=nope" },
+    { "name": "GET /about", "path": "/about" },
+    { "name": "POST /echo", "method": "POST", "path": "/echo", "body": "{\"n\":41}" },
+    { "name": "GET /missing", "path": "/missing" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "denoexit-runtime",
+  "private": true,
+  "description": "Pins the real workerd binary that denoexit runs your bundle on.",
+  "dependencies": {
+    "workerd": "1.20261024.1"
+  }
+}
